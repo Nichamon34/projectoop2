@@ -92,6 +92,7 @@ public class PizzaOrder implements pizmanu {
          for(int h =0; h<7;h++){
         System.out.print("=");
         }
+         System.out.println("");
         System.out.println("Hawaiian");
         System.out.println("Meat Lovers");
         System.out.println("Aussie");

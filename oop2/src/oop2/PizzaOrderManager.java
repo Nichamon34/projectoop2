@@ -90,7 +90,7 @@ public class PizzaOrderManager extends ab2 {
 
         } //end while
          System.out.println("");
-         System.out.print("สั่งอาหารอีกมั้ย :(Y/N)");
+         System.out.print("Do you need again :(Y/N)");
         } while (scanner.next().equalsIgnoreCase("Y"));
     }
 

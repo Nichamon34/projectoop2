@@ -35,6 +35,7 @@ public class saladOrder extends PizzaOrder implements salmanu {
         for(int h =0; h<7;h++){
         System.out.print("=");
         }
+        System.out.println("");
         System.out.println("Spicy Carrot Salad");
         System.out.println("Herb Salad");
         System.out.println("Champagne Greens");
