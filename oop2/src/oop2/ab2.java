@@ -16,7 +16,7 @@ abstract class ab2 extends ab1 {
         System.out.println("2.Silver");
         System.out.println("3.GOld");
         System.out.println("4.Not Member");
-         System.out.print(">>>>> ");
+        System.out.print(">>>>> ");
 
     }
 

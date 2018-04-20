@@ -16,6 +16,7 @@ public class PizzaOrder implements pizmanu {
         setPhoneNumber("xxxx");
         setOrder("testorder");
         setType("testtype");
+        System.out.println("----------------");
     }
 
     //setters
@@ -60,7 +61,7 @@ public class PizzaOrder implements pizmanu {
         return type;
     }
 
-  //declaring variables for methods of cost and total cost of pizza
+    //declaring variables for methods of cost and total cost of pizza
     double price; //p is the cost of the pizza
     public double totalCost = 0; //c is the total cost (in dollars)
     double deliveryCost; //t is cost of the delivery
@@ -89,19 +90,19 @@ public class PizzaOrder implements pizmanu {
     }
 
     public void pizzamanu() {
-         for(int h =0; h<7;h++){
-        System.out.print("=");
+        for (int h = 0; h < 15; h++) {
+            System.out.print("=");
         }
-         System.out.println("");
+        System.out.println("");
         System.out.println("Hawaiian");
         System.out.println("Meat Lovers");
         System.out.println("Aussie");
         System.out.println("Supreme");
         System.out.println("Pepperoni");
-         for(int h =0; h<7;h++){
-        System.out.print("=");
+        for (int h = 0; h < 15; h++) {
+            System.out.print("=");
         }
-         System.out.println("");
+        System.out.println("");
 
     }
 
@@ -113,7 +114,7 @@ public class PizzaOrder implements pizmanu {
         }//end if delivery
         else if (getType().equals("Delivery")) {
             deliveryCost = 20.0;
-            totalCost = +deliveryCost + price;
+            totalCost = deliveryCost + price;
         }//end else-if delivery
         return totalCost;
 

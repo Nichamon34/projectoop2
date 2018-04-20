@@ -7,7 +7,11 @@ public class saladOrder extends PizzaOrder implements salmanu {
     private String phoneNumber;
     private String order;
     private String type;
-    double price1; //p is the cost of the salad
+    double price1; //price1 is the cost of the salad
+
+    saladOrder() {
+        super();
+    }
 
     public double determinesalapPrice() {
         if (getOrder().equals("Spicy Carrot Salad")) {
@@ -32,8 +36,8 @@ public class saladOrder extends PizzaOrder implements salmanu {
     }
 
     public void saladmanu() {
-        for(int h =0; h<7;h++){
-        System.out.print("=");
+        for (int h = 0; h < 15; h++) {
+            System.out.print("=");
         }
         System.out.println(" ");
         System.out.println("Spicy Carrot Salad");
@@ -41,12 +45,10 @@ public class saladOrder extends PizzaOrder implements salmanu {
         System.out.println("Champagne Greens");
         System.out.println("Caesar Salad");
         System.out.println("Panzanella");
-         for(int h =0; h<7;h++){
-        System.out.print("=");
+        for (int h = 0; h < 15; h++) {
+            System.out.print("=");
         }
-         System.out.println("");
+        System.out.println("");
     }
-
-   
 
 }
