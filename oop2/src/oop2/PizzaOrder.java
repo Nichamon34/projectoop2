@@ -110,13 +110,13 @@ public class PizzaOrder implements pizmanu {
         saladOrder s1 = new saladOrder();
         if (getType().equals("Pick-up")) {
             deliveryCost = 0.0;
-            totalCost = price;
+           
         }//end if delivery
         else if (getType().equals("Delivery")) {
             deliveryCost = 20.0;
             totalCost = deliveryCost + price;
         }//end else-if delivery
-        return totalCost;
+        return   totalCost = deliveryCost + price;
 
     }
 
