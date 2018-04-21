@@ -16,7 +16,7 @@ public class PizzaOrder   implements pizmanu {
         setPhoneNumber("xxxx");
         setOrder("testorder");
         setType("testtype");
-       //System.out.println("-----");
+      
     }
 
     //setters
@@ -65,7 +65,6 @@ public class PizzaOrder   implements pizmanu {
     double price; //ราคา pizza
     public double totalCost = 0; //ราคารวม
     double deliveryCost; //เงินดิลิเวอรี่
-
     //ค่าพิซซ่า
     public double determinePizzaPrice() {
         if (getOrder().equals("Hawaiian")) {

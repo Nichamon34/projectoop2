@@ -3,6 +3,7 @@ package oop2;
 import java.util.Scanner;
 
 public class PizzaOrderManager extends ab2 {
+    
 
     public static void main(String[] args) {
 
@@ -70,6 +71,7 @@ public class PizzaOrderManager extends ab2 {
                 System.out.println("Type (Pick-up or Delivery(plus20 bath)): " + p1.getType());   // Pickup or Delivery        
                 System.out.println("Pizza Cost ($): " + p1.determinePizzaPrice());
                 System.out.println("salad Cost ($): " + s1.determinesalapPrice());
+                
                 sum = p1.totalCost() + s1.determinesalapPrice();
                 if(sum == 0){
                     System.out.println("Member total cost " + sum);
@@ -101,7 +103,7 @@ public class PizzaOrderManager extends ab2 {
             System.out.println("");
             System.out.print("Do you need again :(Y/N)");
         } while (scanner.next().equalsIgnoreCase("Y"));//end do while
-
+         System.out.println("Thank you");
     }
 
 }

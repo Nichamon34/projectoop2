@@ -9,9 +9,7 @@ public class saladOrder extends PizzaOrder implements salmanu {
     private String type;
     double price1; //ราคาสลัด
 
-    saladOrder() {
-        super();
-    }
+
 //ค่าของสลัด
     public double determinesalapPrice() {
         if (getOrder().equals("Spicy Carrot Salad")) {
@@ -55,5 +53,6 @@ public class saladOrder extends PizzaOrder implements salmanu {
         }
         System.out.println("");
     }
+   
 
 }

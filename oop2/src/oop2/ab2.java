@@ -20,7 +20,4 @@ abstract class ab2 extends ab1 {
         System.out.print(">>>>> ");
 
     }
-   
-    
-
 }
