@@ -1,6 +1,6 @@
 package oop2;
 
-public class PizzaOrder implements pizmanu {
+public class PizzaOrder  implements pizmanu {
 
     //ตัวแปรprivate
     private int id;

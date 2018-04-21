@@ -14,6 +14,7 @@ public class PizzaOrderManager extends ab2 {
 // input Scanners
         Scanner numberOfPizzasOrderedScanner = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
+                
 
 //Add a new Order
         do {
@@ -27,11 +28,12 @@ public class PizzaOrderManager extends ab2 {
 
 // loop แสดรายละเอียด pizza/salad
             while (i <= numberOfPizzasOrdered) {
+                PizzaOrder p1 = new PizzaOrder();
+                saladOrder s1 = new saladOrder();
                 System.out.println("Enter Details of Pizza & Salad Order " + numberOfCurrentPizza + ":");
                 System.out.println("===================");
 //รายละเอียด of the new order
-                PizzaOrder p1 = new PizzaOrder();
-                saladOrder s1 = new saladOrder();
+                
                 System.out.print("ID: ");
                 p1.setId(scanner.nextInt());
 
@@ -90,6 +92,7 @@ public class PizzaOrderManager extends ab2 {
                         System.out.println("Member total cost " + sum);
                         break;
                 }
+             
 
                 numberOfCurrentPizza = numberOfCurrentPizza + 1;
                 i++;
