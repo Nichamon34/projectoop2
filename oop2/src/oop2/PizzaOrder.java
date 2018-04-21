@@ -83,6 +83,10 @@ public class PizzaOrder implements pizmanu {
         else if (getOrder().equals("Pepperoni")) {
             price = 250;
         }//end else-if for order Pepperoni
+        else if (getOrder().equals("no")) {
+            price = 0;
+            System.out.println("No Pizza Manu");
+        }
         else {
             System.out.println("Error: Incorrect Order name has been entered. Please ensure it is spelt correctly");
         }//end else 
@@ -108,6 +112,7 @@ public class PizzaOrder implements pizmanu {
     }
 //คำนวนเงิน
     public double totalCost() {
+        
         saladOrder s1 = new saladOrder();
         if (getType().equals("Pick-up")) {
             deliveryCost = 0.0;

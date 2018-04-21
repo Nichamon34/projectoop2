@@ -19,7 +19,7 @@ public class PizzaOrderManager extends ab2 {
         do {
             wellcom a = new wellcom();
             a.showintro();
-            numberOfPizzasOrdered = numberOfPizzasOrderedScanner.nextInt();
+            numberOfPizzasOrdered = numberOfPizzasOrderedScanner.nextInt();          
             System.out.println("");
 
 //นับรอบ  while
@@ -53,7 +53,7 @@ public class PizzaOrderManager extends ab2 {
                 System.out.print("Type (Pick-Up or Delivery): ");
                 p1.setType(scanner.next());
                 a.showmem();
-
+             
 //show Pizza salad Order Details
                 System.out.println("");
                 System.out.println("Details of Pizza Order " + numberOfCurrentPizza + ":");
@@ -69,16 +69,19 @@ public class PizzaOrderManager extends ab2 {
                 System.out.println("Pizza Cost ($): " + p1.determinePizzaPrice());
                 System.out.println("salad Cost ($): " + s1.determinesalapPrice());
                 sum = p1.totalCost() + s1.determinesalapPrice();
+                if(sum == 0){
+                    System.out.println("Member total cost " + sum);
+                }
                 System.out.println("Calculate total cost ($): " + sum);
                 switch (a.member) {
                     case 1:
-                        System.out.println("Member total cost " + (sum - 50));
+                        System.out.println("Member total cost " + (sum-(sum*0.05) ));
                         break;
                     case 2:
-                        System.out.println("Member total cost " + (sum - 70));
+                        System.out.println("Member total cost " + (sum-(sum*0.07) ));
                         break;
                     case 3:
-                        System.out.println("Member total cost " + (sum - 100));
+                        System.out.println("Member total cost " + (sum-(sum*0.1) ));
                         break;
                     case 4:
                         System.out.println("Member total cost " + sum);

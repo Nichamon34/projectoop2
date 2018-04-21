@@ -18,7 +18,7 @@ public class wellcom extends PizzaOrderManager {
         Scanner scan = new Scanner(System.in);
 
         super.member();//เรียกใช้เพื่อโชว์member
-        member = scan.nextInt();
+       member = scan.nextInt();
 
     }
 }

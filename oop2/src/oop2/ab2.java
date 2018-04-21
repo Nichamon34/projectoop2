@@ -1,6 +1,7 @@
 package oop2;
 
 abstract class ab2 extends ab1 {
+    
 //หัวร้าน เมนเรียกใช้
     public void intro() {
         
@@ -19,5 +20,6 @@ abstract class ab2 extends ab1 {
         System.out.print(">>>>> ");
 
     }
+    
 
 }

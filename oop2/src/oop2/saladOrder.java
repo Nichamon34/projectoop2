@@ -29,6 +29,10 @@ public class saladOrder extends PizzaOrder implements salmanu {
         else if (getOrder().equals("Panzanella")) {
             price1 = 250.0;
         }//end else-if for order Pepperoni
+        else if (getOrder().equals("no")) {
+            price1 = 0;
+            System.out.println("No salad Manu");
+        }
         else {
             System.out.println("Error: Incorrect Order name has been entered. Please ensure it is spelt correctly");
         }//end else 
