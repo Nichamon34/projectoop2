@@ -3,11 +3,11 @@ package oop2;
 abstract class ab2 extends ab1 {
 
     public void intro() {
-        //Adding a new Order
+        
         System.out.println("Pizza Order Manager");
         System.out.println("===================");
         System.out.println("");
-        System.out.print("Enter number of Pizza Orders: ");
+        System.out.print("Enter number of Pizza & Salad Orders: ");
     }
 
     public void member() {
