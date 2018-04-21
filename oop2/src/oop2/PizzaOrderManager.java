@@ -49,10 +49,10 @@ public class PizzaOrderManager extends ab2 {
                 p1.setPhoneNumber(scanner.nextLine());
                 p1.pizzamanu();
                 System.out.print("Order(pizza): ");
-                p1.setOrder(scanner.nextLine());
+                p1.setOrder(scanner.nextLine().trim());
                 s1.saladmanu();
                 System.out.print("Orde(salad): ");
-                s1.setOrder(scanner.nextLine());
+                s1.setOrder(scanner.nextLine().trim());
                 System.out.print("Type (Pick-Up or Delivery): ");
                 p1.setType(scanner.next());
                 a.showmem();
