@@ -61,12 +61,12 @@ public class PizzaOrder implements pizmanu {
         return type;
     }
 
-    //declaring variables for methods of cost and total cost of pizza
-    double price; //p is the cost of the pizza
+    //ตัวแปรคำนวนราคา
+    double price; //price is the cost of the pizza
     public double totalCost = 0; //c is the total cost (in dollars)
     double deliveryCost; //t is cost of the delivery
 
-    //method for determining pizza price
+    //method for  pizza price
     public double determinePizzaPrice() {
         if (getOrder().equals("Hawaiian")) {
             price = 300;
