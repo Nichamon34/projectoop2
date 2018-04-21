@@ -7,7 +7,7 @@ public class saladOrder extends PizzaOrder implements salmanu {
     private String phoneNumber;
     private String order;
     private String type;
-    double price1; //price1 is the cost of the salad
+    double price1; //ราคาสลัด
 
     saladOrder() {
         super();
@@ -40,11 +40,12 @@ public class saladOrder extends PizzaOrder implements salmanu {
             System.out.print("=");
         }
         System.out.println(" ");
-        System.out.println("Spicy Carrot Salad");
-        System.out.println("Herb Salad");
-        System.out.println("Champagne Greens");
-        System.out.println("Caesar Salad");
-        System.out.println("Panzanella");
+        System.out.println(" SalaD MANU......");
+        System.out.println("Spicy Carrot Salad\t150 Bath");
+        System.out.println("Herb Salad\t\t100 Bath");
+        System.out.println("Champagne Greens\t50 Bath");
+        System.out.println("Caesar Salad\t\t120 Bath");
+        System.out.println("Panzanella\t\t250 Bath");
         for (int h = 0; h < 15; h++) {
             System.out.print("=");
         }

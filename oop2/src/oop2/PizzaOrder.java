@@ -94,11 +94,12 @@ public class PizzaOrder implements pizmanu {
             System.out.print("=");
         }
         System.out.println("");
-        System.out.println("Hawaiian");
-        System.out.println("Meat Lovers");
-        System.out.println("Aussie");
-        System.out.println("Supreme");
-        System.out.println("Pepperoni");
+        System.out.println(" PiZZA MANU......");
+        System.out.println("Hawaiian\t300 Bath");
+        System.out.println("Meat Lovers\t250 Bath");
+        System.out.println("Aussie\t\t250 Bath");
+        System.out.println("Supreme\t\t300 Bath");
+        System.out.println("Pepperoni\t250 Bath");
         for (int h = 0; h < 15; h++) {
             System.out.print("=");
         }

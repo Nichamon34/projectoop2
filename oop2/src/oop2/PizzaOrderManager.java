@@ -6,30 +6,30 @@ public class PizzaOrderManager extends ab2 {
 
     public static void main(String[] args) {
 
-// Declare Variables
+//ตัวแปร
         int numberOfPizzasOrdered;
         int numberOfCurrentPizza = 1;
         double sum = 0;
 
-//Declare input Scanners
+// input Scanners
         Scanner numberOfPizzasOrderedScanner = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
 
-//Adding a new Order
+//Add a new Order
         do {
             wellcom a = new wellcom();
             a.showintro();
             numberOfPizzasOrdered = numberOfPizzasOrderedScanner.nextInt();
             System.out.println("");
 
-//declaring a counter
+//นับรอบ counter
             int i = 1;
 
-//creating a loop to display entry details for pizzas salad
+// loop to display entry details for pizzas salad
             while (i <= numberOfPizzasOrdered) {
                 System.out.println("Enter Details of Pizza & Salad Order " + numberOfCurrentPizza + ":");
                 System.out.println("===================");
-//Details of the new order
+//รายละเอียด of the new order
                 PizzaOrder p1 = new PizzaOrder();
                 saladOrder s1 = new saladOrder();
                 System.out.print("ID: ");
@@ -54,7 +54,7 @@ public class PizzaOrderManager extends ab2 {
                 p1.setType(scanner.next());
                 a.showmem();
 
-//Display Pizza salad Order Details
+//show Pizza salad Order Details
                 System.out.println("");
                 System.out.println("Details of Pizza Order " + numberOfCurrentPizza + ":");
                 System.out.println("=======================");
@@ -94,7 +94,7 @@ public class PizzaOrderManager extends ab2 {
             } //end while
             System.out.println("");
             System.out.print("Do you need again :(Y/N)");
-        } while (scanner.next().equalsIgnoreCase("Y"));
+        } while (scanner.next().equalsIgnoreCase("Y"));//end do while
         
     }
 
