@@ -20,7 +20,7 @@ public class PizzaOrderManager extends ab2 {
         do {
             wellcom a = new wellcom();
             a.showintro();
-            numberOfPizzasOrdered = numberOfPizzasOrderedScanner.nextInt();          
+            numberOfPizzasOrdered = numberOfPizzasOrderedScanner.nextInt();  //รับค่าออเดอร์        
             System.out.println("");
 
 //นับรอบ  while
@@ -67,7 +67,7 @@ public class PizzaOrderManager extends ab2 {
 
                 System.out.println("Order(Pizza): " + p1.getOrder());   //Type of Pizza eg; Peperoni
                 System.out.println("Order(salad): " + s1.getOrder());
-                System.out.println("Type (Pick-up or Delivery(plus20 bath)): " + p1.getType());   // Pickup or Delivery 
+                System.out.println("Type (Pick-up or Delivery(plus20 bath)): " + p1.getType());   // Pickup or Delivery        
                 System.out.println("Pizza Cost ($): " + p1.determinePizzaPrice());
                 System.out.println("salad Cost ($): " + s1.determinesalapPrice());
                 sum = p1.totalCost() + s1.determinesalapPrice();

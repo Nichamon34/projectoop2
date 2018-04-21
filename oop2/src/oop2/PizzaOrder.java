@@ -1,6 +1,6 @@
 package oop2;
 
-public class PizzaOrder  implements pizmanu {
+public class PizzaOrder   implements pizmanu {
 
     //ตัวแปรprivate
     private int id;
@@ -16,7 +16,7 @@ public class PizzaOrder  implements pizmanu {
         setPhoneNumber("xxxx");
         setOrder("testorder");
         setType("testtype");
-        System.out.println("----------------");
+       //System.out.println("-----");
     }
 
     //setters
@@ -120,9 +120,16 @@ public class PizzaOrder  implements pizmanu {
         }//end if delivery
         else if (getType().equals("Delivery")) {
             deliveryCost = 20.0;
+            if(getOrder().equals("no")|| s1.getOrder().equals("no")){
+                deliveryCost = 0.0;
+            }
+            
         }//end else-if delivery
+       
         return  totalCost = deliveryCost + price;
-
+//สั่งพิซซ่ากลับ +20
+//สลัดอย่างเดียวไม่บวก
+//ทั้งคู่ +20
     }
 
 }
