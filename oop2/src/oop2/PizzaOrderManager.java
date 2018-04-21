@@ -22,10 +22,10 @@ public class PizzaOrderManager extends ab2 {
             numberOfPizzasOrdered = numberOfPizzasOrderedScanner.nextInt();
             System.out.println("");
 
-//นับรอบ counter 
+//นับรอบ  while
             int i = 1;
 
-// loop to display entry details for pizzas salad
+// loop แสดรายละเอียด pizza/salad
             while (i <= numberOfPizzasOrdered) {
                 System.out.println("Enter Details of Pizza & Salad Order " + numberOfCurrentPizza + ":");
                 System.out.println("===================");

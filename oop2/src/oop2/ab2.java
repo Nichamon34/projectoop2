@@ -1,7 +1,7 @@
 package oop2;
 
 abstract class ab2 extends ab1 {
-
+//หัวร้าน เมนเรียกใช้
     public void intro() {
         
         System.out.println("Pizza Order Manager");
@@ -9,7 +9,7 @@ abstract class ab2 extends ab1 {
         System.out.println("");
         System.out.print("Enter number of Pizza & Salad Orders: ");
     }
-
+//โชว์ โปรโมชั่น
     public void member() {
         System.out.println("****** Member ********");
         System.out.println("1.Bronze");

@@ -12,7 +12,7 @@ public class saladOrder extends PizzaOrder implements salmanu {
     saladOrder() {
         super();
     }
-
+//ค่าของสลัด
     public double determinesalapPrice() {
         if (getOrder().equals("Spicy Carrot Salad")) {
             price1 = 150.0;
@@ -34,7 +34,7 @@ public class saladOrder extends PizzaOrder implements salmanu {
         }//end else 
         return price1;
     }
-
+//โชว์เมนู
     public void saladmanu() {
         for (int h = 0; h < 15; h++) {
             System.out.print("=");

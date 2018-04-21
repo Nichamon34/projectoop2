@@ -2,7 +2,7 @@ package oop2;
 
 public class PizzaOrder implements pizmanu {
 
-    //declaring variables
+    //ตัวแปรprivate
     private int id;
     private String name;
     private String phoneNumber;
@@ -62,11 +62,11 @@ public class PizzaOrder implements pizmanu {
     }
 
     //ตัวแปรคำนวนราคา
-    double price; //price is the cost of the pizza
-    public double totalCost = 0; //c is the total cost (in dollars)
-    double deliveryCost; //t is cost of the delivery
+    double price; //ราคา pizza
+    public double totalCost = 0; //ราคารวม
+    double deliveryCost; //เงินดิลิเวอรี่
 
-    //method for  pizza price
+    //ค่าพิซซ่า
     public double determinePizzaPrice() {
         if (getOrder().equals("Hawaiian")) {
             price = 300;
@@ -88,7 +88,7 @@ public class PizzaOrder implements pizmanu {
         }//end else 
         return price;
     }
-
+//แสดงเมนู
     public void pizzamanu() {
         for (int h = 0; h < 15; h++) {
             System.out.print("=");
@@ -106,7 +106,7 @@ public class PizzaOrder implements pizmanu {
         System.out.println("");
 
     }
-
+//คำนวนเงิน
     public double totalCost() {
         saladOrder s1 = new saladOrder();
         if (getType().equals("Pick-up")) {

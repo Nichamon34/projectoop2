@@ -9,7 +9,7 @@ public class wellcom extends PizzaOrderManager {
 
     public void showintro() {
 
-        super.intro();
+        super.intro();//เรียกใช้เพื่อโชว์introร้าน
 
     }
 
@@ -17,7 +17,7 @@ public class wellcom extends PizzaOrderManager {
 
         Scanner scan = new Scanner(System.in);
 
-        super.member();
+        super.member();//เรียกใช้เพื่อโชว์member
         member = scan.nextInt();
 
     }
