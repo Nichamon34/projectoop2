@@ -94,6 +94,7 @@ public class PizzaOrderManager extends ab2 {
                         System.out.println("Member total cost " + sum);
                         break;
                 }
+                System.out.println(" ");
              
 
                 numberOfCurrentPizza = numberOfCurrentPizza + 1;
